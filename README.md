@@ -47,12 +47,6 @@ The script performs the following steps:
 - `requests`: Used for sending HTTP requests and handling responses.
 - `csv`: Used for reading and writing CSV files.
 
-### Notes
-
-- Make sure to replace the `'YOUR_API_KEY'` placeholder with your actual NASA API key.
-- The script may take some time to execute depending on the number of images returned by the API and their sizes.
-- Ensure you have a stable internet connection while running the script to download images from the NASA API.
-
 ## Q2 : EC2 & RDS pricing in AWS enviroment
 Q2.pdf fole provides guidance on optimizing costs for AWS EC2 and RDS instances by understanding the factors influencing pricing and implementing strategies to reduce and optimize costs.
 
