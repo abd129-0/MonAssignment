@@ -48,7 +48,7 @@ def process_nasa_data(data):
     return results
 
 # Function to write results to a CSV file
-def write_to_csv(results, filename='output.csv'):
+def write_to_csv(results, filename='output1.csv'):
     """
     Writes processed NASA data to a CSV file.
 
