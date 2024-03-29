@@ -46,9 +46,28 @@ The script performs the following steps:
 3. Parses the JSON response to extract relevant image data.
 4. Iterates over the items in the response, checking for images and their sizes.
 5. Downloads each image to check its size and filters out images larger than 1000 KB.
-6. Writes the filtered results to a CSV file named `output.csv`.
+6. Writes the filtered results to a CSV file named `output1.csv`.
+
 
 ### Example run in AWS EC2 enviroment
+1. Clonning the repository:
+    ![image](https://github.com/abd129-0/MondayAssignment/assets/75143506/9d31f2b0-5488-47fe-85e9-59752367dbb9)
+   
+3. Navigating to the directory that containing the script:
+    ![image](https://github.com/abd129-0/MondayAssignment/assets/75143506/f0c9b041-ab89-4ac1-85ab-1ce1e22c8587)
+
+4. Running the script:
+    ![image](https://github.com/abd129-0/MondayAssignment/assets/75143506/2d41612d-fcae-4495-8848-06423e2f16b8)
+
+5. results :
+       ![image](https://github.com/abd129-0/MondayAssignment/assets/75143506/8671b323-78d6-4476-88f3-338914137b7d)
+
+       ![image](https://github.com/abd129-0/MondayAssignment/assets/75143506/29b7c9c4-d250-4cd3-8b17-3245b1c706c2)
+
+
+   
+   
+ 
 
 
 
