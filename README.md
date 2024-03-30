@@ -87,7 +87,14 @@ The script performs the following steps:
 - `csv`: Used for reading and writing CSV files.
 
 ## Q2 : EC2 & RDS pricing in AWS enviroment
-- Q2.pdf file provides guidance on optimizing costs for AWS EC2 and RDS instances by understanding the factors influencing pricing and implementing strategies to reduce and optimize costs.
+- Q2AWSpricing.pdf file provides guidance on optimizing costs for AWS EC2 and RDS instances by understanding the factors influencing pricing and implementing strategies to reduce and optimize costs.
+
+  ![image](https://github.com/abd129-0/MondayAssignment/assets/75143506/396a7c77-a927-4b0b-8da6-2c4f7bff6aef)
+  
+
+  ![image](https://github.com/abd129-0/MondayAssignment/assets/75143506/8b2f4b1e-b488-4edc-93e4-873df98b0d03)
+
+
 
 ## Author
 
