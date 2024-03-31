@@ -39,6 +39,8 @@ Before running the script, ensure that you have the following:
 
 ### Description
 
+Before running the script, please ensure to modify the configuration path (`config.ini`) accordingly based on your setup. 
+
 The script performs the following steps:
 
 1. Constructs a URL for the NASA image API search endpoint.
