@@ -23,26 +23,30 @@ Before running the script, ensure that you have the following:
 
 ### Usage
 
-1. Clone the repository or download the script directly:
+1. Navigate to the directory where you want to clone the repository using the cd command:
+   ```
+   cd /path/to/desired/directory
+   ```
+
+2. Clone the repository or download the script directly:
     ```
     git clone https://github.com/abd129-0/MondayAssignment.git
     ```
-
-2. Before running the script, make sure to modify the configuration file (`config.ini`) according to your setup.
-
-3. Open a terminal or command prompt.
-
-4. Navigate to the directory containing the script:
+3. Navigate to the directory containing the script:
     ```
     cd <path>/monday.comHW
     ```
 
-5. Run the script using the following command:
+4. Before running the script, make sure to modify the configuration file (`config.ini`) according to your setup.
+
+5. Open a terminal or command prompt.
+
+6. Run the script using the following command:
     ```
     python monday.comHW.py
     ```
 
-6. The script will create a new CSV file in the current directory.
+7. The script will create a new CSV file in the current directory.
 
     
 
