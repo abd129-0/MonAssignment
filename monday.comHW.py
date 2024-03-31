@@ -1,5 +1,7 @@
 import requests
 import csv
+import configparser
+import os
 
 # Function to fetch data from NASA API
 def fetch_nasa_data(url, params):
@@ -39,7 +41,7 @@ def process_nasa_data(data):
                 print(f"Processing image {index}")  # Print the processing message with image index
                 image_response = requests.get(image_url, stream=True)
                 # convert byte to KB
-                image_size_kb = int(image_response.headers.get('content-length', 0)) / 1024 
+                image_size_kb = int(image_response.headers.get('content-length', 0)) / 1024
                 if image_size_kb > 1000:
                     results.append({
                         'Nasa_id': item['data'][0]['nasa_id'],
@@ -48,7 +50,7 @@ def process_nasa_data(data):
     return results
 
 # Function to write results to a CSV file
-def write_to_csv(results, filename='output1.csv'):
+def write_to_csv(results, filename='output.csv'):
     """
     Writes processed NASA data to a CSV file.
 
@@ -65,15 +67,21 @@ def write_to_csv(results, filename='output1.csv'):
 
 # Main function to orchestrate the process
 def main():
-    # URL and parameters for NASA API request
+    # Read configuration from external file
+    config = configparser.ConfigParser()
+    config.read('config.ini')  # Path to your configuration file
+
+    # URL for NASA API request
     url = "https://images-api.nasa.gov/search"
+
+    # Parameters from configuration file or environment variables
     params = {
-        'q': 'Ilan Ramon'
+        'q': config.get('NASA', 'query') if 'NASA' in config else os.environ.get('NASA_QUERY', 'Ilan Ramon')
     }
-    
+
     # Fetch data from NASA API
     data = fetch_nasa_data(url, params)
-    
+
     # Process NASA data
     if data:
         results = process_nasa_data(data)
