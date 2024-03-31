@@ -16,23 +16,33 @@ Before running the script, ensure that you have the following:
     pip install requests
     ```
 
+    ```
+    pip install configparser
+    ```
+
+
 ### Usage
 
-1. Clone the repository or download the script directly.
+1. Clone the repository or download the script directly:
     ```
     git clone https://github.com/abd129-0/MondayAssignment.git
     ```
-2. Open a terminal or command prompt.
 
-3. Navigate to the directory containing the script.
+2. Before running the script, make sure to modify the configuration file (`config.ini`) according to your setup.
+
+3. Open a terminal or command prompt.
+
+4. Navigate to the directory containing the script:
     ```
     cd <path>/monday.comHW
     ```
-4. Run the script using the following command:
+
+5. Run the script using the following command:
     ```
     python monday.comHW.py
     ```
-5.The script will create a new CSV file in the navigated directory. 
+
+6. The script will create a new CSV file in the current directory.
 
     
 
@@ -71,22 +81,21 @@ The script performs the following steps:
    ![image](https://github.com/abd129-0/MondayAssignment/assets/75143506/29b7c9c4-d250-4cd3-8b17-3245b1c706c2)
 
 
-   
-   
- 
-
-
 
 ### Parameters
 
 - **URL**: The endpoint URL for the NASA image API.
 - **Search Parameters**: The script searches for assets related to "Ilan Ramon" using the 'q' parameter.
 - **Output File**: The script saves the filtered results to a CSV file named `output.csv`.
+  
 
 ### Dependencies
 
 - `requests`: Used for sending HTTP requests and handling responses.
 - `csv`: Used for reading and writing CSV files.
+- `configparser`: Used for parsing configuration files.
+- `os`: Provides a portable way to use operating system-dependent functionality.
+
 
 ## Q2 : EC2 & RDS pricing in AWS enviroment
 - Q2AWSpricing.pdf file provides guidance on optimizing costs for AWS EC2 and RDS instances by understanding the factors influencing pricing and implementing strategies to reduce and optimize costs.
